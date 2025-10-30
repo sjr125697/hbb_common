@@ -69,6 +69,9 @@ lazy_static::lazy_static! {
         map.insert("relay-server".to_owned(), "192.168.101.124:21117".to_owned());
         map.insert("api-server".to_owned(), "http://192.168.101.124:21114".to_owned());
         map.insert("key".to_owned(), "cc2f0806-1c59-4274-b7b6-ece0cccef422".to_owned());
+        // 默认开启自动录制（入站/出站）
+        map.insert("allow-auto-record-incoming".to_owned(), "Y".to_owned());
+        map.insert("allow-auto-record-outgoing".to_owned(), "Y".to_owned());
         RwLock::new(map)
     };
     pub static ref OVERWRITE_SETTINGS: RwLock<HashMap<String, String>> = Default::default();
