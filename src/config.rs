@@ -65,9 +65,9 @@ lazy_static::lazy_static! {
     pub static ref DEFAULT_SETTINGS: RwLock<HashMap<String, String>> = {
         let mut map = HashMap::new();
         // 默认服务器配置 - 在编译时封装
-        map.insert("custom-rendezvous-server".to_owned(), "10.60.64.89:21116".to_owned());
-        map.insert("relay-server".to_owned(), "10.60.64.89:21117".to_owned());
-        map.insert("api-server".to_owned(), "http://10.60.64.89:21114".to_owned());
+        map.insert("custom-rendezvous-server".to_owned(), "xxx.xxx.xxx.xxx:21116".to_owned());
+        map.insert("relay-server".to_owned(), "xxx.xxx.xxx.xxx:21117".to_owned());
+        map.insert("api-server".to_owned(), "http://xxx.xxx.xxx.xxx:21114".to_owned());
         map.insert("key".to_owned(), "cc2f0806-1c59-4274-b7b6-ece0cccef422".to_owned());
         // 默认开启自动录制（入站/出站）
         map.insert("allow-auto-record-incoming".to_owned(), "Y".to_owned());
